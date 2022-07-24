@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1 style="float: left;">Theme controller: </h1>
+        <label class="switch" style="float: center;">
+            <input type="checkbox" id="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <br><br><br>
+
+    <div>
+        <h1>
+            Ontony by simple calculator
+        </h1>
+        <table style="text-align: center; margin: auto;">
+            <tr>
+                <td>
+                    <button onclick="clearAll()">C</button>
+                    <input type="text" id="input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="displaySymbol('+')">+</button>
+                    <button onclick="displaySymbol('-')">-</button>
+                    <button onclick="displaySymbol('*')">*</button>
+                    <button onclick="displaySymbol('/')">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="displayNum(7)">7</button>
+                    <button onclick="displayNum(8)">8</button>
+                    <button onclick="displayNum(9)">9</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="displayNum(4)">4</button>
+                    <button onclick="displayNum(5)">5</button>
+                    <button onclick="displayNum(6)">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="displayNum(1)">1</button>
+                    <button onclick="displayNum(2)">2</button>
+                    <button onclick="displayNum(3)">3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="displayDot()">.</button>
+                    <button onclick="displayNum(0)">0</button>
+                    <button onclick="getAnswer()">=</button>
+                </td>
+            </tr>
+        </table>  
+    </div>
+
+    <div>
+        <h1 id="total" class="text">
+            Total: 
+        </h1>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
